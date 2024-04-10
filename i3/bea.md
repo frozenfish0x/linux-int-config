@@ -1,0 +1,3 @@
+feh.
+rofi.
+polybar
