@@ -9,8 +9,9 @@ sudo dnf install -y  fedora-workstation-repositories
 sudo dnf update -y
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
-yes | sudo dnf install -y  google-chrome-stable
-packages=("vlc" "vim"  "nodejs" "code" "neofetch"  "git" )  # or code-insiders
+sudo dnf install -y  google-chrome-stable
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+packages=("vlc" "vim"  "nodejs" "code" "neofetch"  "git" "mysql" "go" "obs-studio" )  # or code-insiders
 
 for pkg in "${packages[@]}";do
 	echo "install $pkg ...."
