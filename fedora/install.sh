@@ -5,6 +5,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 dnf check-update
+sudo dnf -y install mysql-community-server --nogpgcheck
 sudo dnf install -y  fedora-workstation-repositories
 sudo dnf update -y
 sudo dnf config-manager --set-enabled google-chrome
