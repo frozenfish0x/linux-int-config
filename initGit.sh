@@ -1,6 +1,6 @@
 echo "config git now ...."
-git config --global user.name frozenfish
-git config --global user.email cancanneed@qq.com
+git config --global user.name frozenfisher
+git config --global user.email frozenfish2077@gmail.com
 
 
 echo "creat ssh ......"
